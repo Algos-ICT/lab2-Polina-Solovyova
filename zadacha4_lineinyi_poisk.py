@@ -4,22 +4,24 @@ arr = list(map(int, arr.split()))
 v = f.readline()
 v = int(v)
 ind = []
+a = open('/Users/Guest/Documents/output.txt', 'w')
 
 def LinearSearch(arr, element):
     if abs(element) <= 10 ** 3:
         for i in range (len(arr)):
-            if len(arr) >= 0 and len(arr) <= 10 ** 3:
-                if arr[i] == element:
-                    ind.append(i)
-            else:
-                print('ошибка')
+            if arr[i] == element:
+                ind.append(i)
         return -1
     else:
-        print('ошибка')
+        x.write('ошибка')
+        exit()
+            
+if len(arr) >= 1 and len(arr) <= 10 ** 3:
+    LinearSearch(arr, v)
+    out = ' '.join(str(e) for e in ind)
+    a.write(out)
+else:
+    x.write('ошибка')
     
-LinearSearch(arr, v)
-out = ' '.join(str(e) for e in ind)
-a = open('/Users/Guest/Documents/output.txt', 'w')
-a.write(out)
 f.close()
 a.close()
