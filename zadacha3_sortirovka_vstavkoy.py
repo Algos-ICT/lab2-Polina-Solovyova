@@ -21,6 +21,7 @@ def insertion_sort(nums):
 
 if n >= 1 and n <= 10 ** 3:
     insertion_sort(nums)
+    out = sorted(nums, reverse=True)
     out = ' '.join(str(e) for e in nums)
     x.write(out)
 else:
